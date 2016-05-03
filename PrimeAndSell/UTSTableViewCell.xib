@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="40" id="KGk-i7-Jjw" customClass="UTSTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="40"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="39.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="liebiao" translatesAutoresizingMaskIntoConstraints="NO" id="CV1-lJ-a3w">
+                        <rect key="frame" x="8" y="6" width="33" height="28"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="28" id="Ucn-Om-lQY"/>
+                            <constraint firstAttribute="width" constant="33" id="qYJ-Po-OCL"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PiW-Zn-LXP">
+                        <rect key="frame" x="23" y="2" width="21" height="16"/>
+                        <color key="backgroundColor" red="1" green="0.23091558840000001" blue="0.12943653159999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="21" id="714-fl-Rmo"/>
+                            <constraint firstAttribute="height" constant="16" id="Z9N-d8-WFl"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PWV-ba-7GW">
+                        <rect key="frame" x="57" y="9" width="255" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="S6y-KV-gUU"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="PWV-ba-7GW" firstAttribute="leading" secondItem="PiW-Zn-LXP" secondAttribute="trailing" constant="13" id="Fyx-Qs-cX4"/>
+                    <constraint firstItem="PWV-ba-7GW" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="9" id="NxS-b0-203"/>
+                    <constraint firstItem="PiW-Zn-LXP" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="2" id="aOw-HK-qhG"/>
+                    <constraint firstAttribute="trailing" secondItem="PWV-ba-7GW" secondAttribute="trailing" constant="8" id="cHz-JA-S9X"/>
+                    <constraint firstItem="PiW-Zn-LXP" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="23" id="lLV-JO-7Rg"/>
+                    <constraint firstItem="CV1-lJ-a3w" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="lZ7-e1-HLs"/>
+                    <constraint firstItem="CV1-lJ-a3w" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="6" id="rHG-O5-3bU"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="imageV" destination="CV1-lJ-a3w" id="N3z-lg-HZ3"/>
+                <outlet property="name" destination="PWV-ba-7GW" id="jAS-2n-nzK"/>
+                <outlet property="number" destination="PiW-Zn-LXP" id="tBF-ts-MyY"/>
+            </connections>
+            <point key="canvasLocation" x="220" y="309"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="liebiao" width="128" height="128"/>
+    </resources>
+</document>

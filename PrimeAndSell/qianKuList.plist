@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>0</key>
+	<array>
+		<string>开单后立刻打印</string>
+	</array>
+	<key>1</key>
+	<array>
+		<string>打印尺寸</string>
+	</array>
+	<key>2</key>
+	<array>
+		<string>页眉</string>
+		<string>页脚</string>
+	</array>
+	<key>3</key>
+	<array>
+		<string>客户</string>
+		<string>单号</string>
+		<string>制单人</string>
+		<string>业务日期</string>
+		<string>期初客户欠款金额</string>
+		<string>客户累计欠款</string>
+		<string>备注</string>
+		<string>打印时间</string>
+	</array>
+</dict>
+</plist>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>0</key>
+	<array>
+		<string>选择仓库</string>
+		<string>选择仓库</string>
+		<string>请输入单号查询</string>
+	</array>
+	<key>1</key>
+	<array>
+		<string>请选择开始时间</string>
+		<string>请选择结束时间</string>
+	</array>
+</dict>
+</plist>

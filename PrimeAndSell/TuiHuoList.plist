@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>0</key>
+	<array>
+		<string>客户</string>
+		<string>退货仓库</string>
+	</array>
+	<key>1</key>
+	<array>
+		<string>销售退货明细</string>
+	</array>
+	<key>2</key>
+	<array>
+		<string>本次实付金额</string>
+		<string>客户累计欠款</string>
+	</array>
+	<key>3</key>
+	<array>
+		<string>备注</string>
+	</array>
+</dict>
+</plist>

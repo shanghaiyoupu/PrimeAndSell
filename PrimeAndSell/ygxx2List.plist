@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>0</key>
+	<array>
+		<string>请输入员工姓名</string>
+		<string>三位数字的编号</string>
+		<string>老板帐号＋工号</string>
+		<string>请选择员工所属门店</string>
+		<string>请输入员工手机号</string>
+	</array>
+	<key>1</key>
+	<array>
+		<string>请输入密码</string>
+		<string>请在次输入密码</string>
+	</array>
+</dict>
+</plist>

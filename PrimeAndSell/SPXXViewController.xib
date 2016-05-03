@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SPXXViewController">
+            <connections>
+                <outlet property="scrollView" destination="yv7-hR-97t" id="u6q-xg-OMQ"/>
+                <outlet property="searchBar" destination="DW5-xb-37d" id="eNR-YF-vW0"/>
+                <outlet property="tableViewL" destination="2gA-eL-4hv" id="dQf-vF-L4g"/>
+                <outlet property="tableViewR" destination="8bY-4t-fDz" id="24b-5H-6sz"/>
+                <outlet property="tableViewS" destination="zHd-kV-QnJ" id="1Dc-f5-aOR"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <searchBar contentMode="redraw" placeholder="按品名/货单查询" translatesAutoresizingMaskIntoConstraints="NO" id="DW5-xb-37d">
+                    <rect key="frame" x="0.0" y="64" width="600" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="AJS-F7-xmj"/>
+                    </constraints>
+                    <textInputTraits key="textInputTraits"/>
+                </searchBar>
+                <tableView clipsSubviews="YES" tag="1" contentMode="scaleToFill" alwaysBounceVertical="YES" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="zHd-kV-QnJ">
+                    <rect key="frame" x="0.0" y="108" width="600" height="40"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="6Og-OV-Mce"/>
+                    </constraints>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="ahR-OG-c8g"/>
+                        <outlet property="delegate" destination="-1" id="xd0-EN-7X8"/>
+                    </connections>
+                </tableView>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yv7-hR-97t">
+                    <rect key="frame" x="0.0" y="148" width="600" height="42"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="42" id="ueO-Qr-20u"/>
+                    </constraints>
+                </scrollView>
+                <tableView clipsSubviews="YES" tag="2" contentMode="scaleToFill" alwaysBounceVertical="YES" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="2gA-eL-4hv">
+                    <rect key="frame" x="0.0" y="190" width="171.5" height="410"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="LO3-R3-ZM5"/>
+                        <outlet property="delegate" destination="-1" id="oJk-pw-iVW"/>
+                    </connections>
+                </tableView>
+                <tableView clipsSubviews="YES" tag="3" contentMode="scaleToFill" alwaysBounceVertical="YES" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="8bY-4t-fDz">
+                    <rect key="frame" x="171" y="190" width="428.5" height="410"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="mQ7-Ph-Y06"/>
+                        <outlet property="delegate" destination="-1" id="YIM-se-M8Y"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="zHd-kV-QnJ" firstAttribute="top" secondItem="DW5-xb-37d" secondAttribute="bottom" id="2iX-CC-NEs"/>
+                <constraint firstItem="DW5-xb-37d" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="2zc-S5-evh"/>
+                <constraint firstAttribute="trailing" secondItem="zHd-kV-QnJ" secondAttribute="trailing" id="652-EG-61v"/>
+                <constraint firstItem="8bY-4t-fDz" firstAttribute="height" secondItem="2gA-eL-4hv" secondAttribute="height" id="7YK-Th-yvx"/>
+                <constraint firstAttribute="bottom" secondItem="2gA-eL-4hv" secondAttribute="bottom" id="Eh1-oo-BUN"/>
+                <constraint firstAttribute="bottom" secondItem="8bY-4t-fDz" secondAttribute="bottom" id="NEv-J5-aPa"/>
+                <constraint firstAttribute="trailing" secondItem="8bY-4t-fDz" secondAttribute="trailing" id="OsK-cb-vol"/>
+                <constraint firstItem="2gA-eL-4hv" firstAttribute="top" secondItem="yv7-hR-97t" secondAttribute="bottom" id="VKH-TU-NuU"/>
+                <constraint firstItem="yv7-hR-97t" firstAttribute="top" secondItem="zHd-kV-QnJ" secondAttribute="bottom" id="ZF5-tn-r2M"/>
+                <constraint firstItem="8bY-4t-fDz" firstAttribute="width" secondItem="2gA-eL-4hv" secondAttribute="width" multiplier="5:2" id="cIr-aA-HUu"/>
+                <constraint firstItem="yv7-hR-97t" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="cib-wL-sJ8"/>
+                <constraint firstAttribute="trailing" secondItem="yv7-hR-97t" secondAttribute="trailing" id="i66-Tf-tKJ"/>
+                <constraint firstItem="8bY-4t-fDz" firstAttribute="leading" secondItem="2gA-eL-4hv" secondAttribute="trailing" id="kwL-F1-cU3"/>
+                <constraint firstItem="8bY-4t-fDz" firstAttribute="top" secondItem="yv7-hR-97t" secondAttribute="bottom" id="n70-8R-f8B"/>
+                <constraint firstItem="2gA-eL-4hv" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="rMX-SV-m4g"/>
+                <constraint firstItem="zHd-kV-QnJ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="te5-jE-ikd"/>
+                <constraint firstItem="DW5-xb-37d" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="64" id="tys-K0-eqI"/>
+                <constraint firstAttribute="trailing" secondItem="DW5-xb-37d" secondAttribute="trailing" id="uIp-rk-1px"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="UsersViewController">
+            <connections>
+                <outlet property="scrollView" destination="XUL-ob-Ljv" id="UQN-5g-Lxo"/>
+                <outlet property="searchBar" destination="dx5-Ll-W6d" id="4uH-C6-Djd"/>
+                <outlet property="searchDisplayController" destination="57e-BN-6Wy" id="PsI-ns-gqS"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <searchBar contentMode="redraw" placeholder="搜索客户" translatesAutoresizingMaskIntoConstraints="NO" id="dx5-Ll-W6d">
+                    <rect key="frame" x="0.0" y="64" width="600" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="aP8-eE-0af"/>
+                    </constraints>
+                    <textInputTraits key="textInputTraits"/>
+                </searchBar>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" tag="1" contentMode="scaleToFill" indicatorStyle="white" translatesAutoresizingMaskIntoConstraints="NO" id="XUL-ob-Ljv">
+                    <rect key="frame" x="0.0" y="108" width="600" height="492"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="YLt-T3-HXx"/>
+                    </connections>
+                </scrollView>
+            </subviews>
+            <constraints>
+                <constraint firstItem="dx5-Ll-W6d" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="64" id="6Tx-FV-wbq"/>
+                <constraint firstItem="XUL-ob-Ljv" firstAttribute="top" secondItem="dx5-Ll-W6d" secondAttribute="bottom" id="6qI-xK-hoA"/>
+                <constraint firstItem="XUL-ob-Ljv" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="NIm-nm-9qZ"/>
+                <constraint firstAttribute="bottom" secondItem="XUL-ob-Ljv" secondAttribute="bottom" id="POs-e8-tdp"/>
+                <constraint firstAttribute="trailing" secondItem="dx5-Ll-W6d" secondAttribute="trailing" id="hhm-Ie-UL7"/>
+                <constraint firstAttribute="trailing" secondItem="XUL-ob-Ljv" secondAttribute="trailing" id="vwW-0R-1Bd"/>
+                <constraint firstItem="dx5-Ll-W6d" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="zJ1-3e-rfz"/>
+            </constraints>
+        </view>
+        <searchDisplayController id="57e-BN-6Wy">
+            <connections>
+                <outlet property="delegate" destination="-1" id="04p-SF-jrj"/>
+                <outlet property="searchContentsController" destination="-1" id="CSv-Q9-HlB"/>
+                <outlet property="searchResultsDataSource" destination="-1" id="EJQ-UH-AeK"/>
+                <outlet property="searchResultsDelegate" destination="-1" id="usO-pE-Sxp"/>
+            </connections>
+        </searchDisplayController>
+    </objects>
+</document>
